@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ripple Moment｜大阪の野球写真・フォトグラファー</title>
+  <meta name="description" content="大阪を中心に活動する野球フォトグラファー Ripple Moment。少年野球から高校・大学まで。週末限定で撮影承ります。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ripple-moment.com/" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ripple-moment.com/" />
+  <meta property="og:title" content="Ripple Moment｜大阪の野球写真・フォトグラファー" />
+  <meta property="og:description" content="大阪を中心に活動する野球フォトグラファー Ripple Moment。少年野球から高校・大学まで。週末限定で撮影承ります。" />
+  <meta property="og:image" content="https://ripple-moment.com/ogp.jpg" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:site_name" content="Ripple Moment" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ripple Moment｜大阪の野球写真・フォトグラファー" />
+  <meta name="twitter:description" content="大阪を中心に活動する野球フォトグラファー Ripple Moment。少年野球から高校・大学まで。週末限定で撮影承ります。" />
+  <meta name="twitter:image" content="https://ripple-moment.com/ogp.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --navy: #1a2744;
+      --navy-light: #2d3f6e;
+      --green-line: #06C755;
+      --white: #ffffff;
+      --off-white: #f8f8f6;
+      --gray-light: #f2f2f0;
+      --gray-mid: #e0e0dc;
+      --gray-text: #777770;
+      --text: #222222;
+      --text-sub: #555550;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* ─── HEADER ─────────────────────────────── */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 40px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .header-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--navy);
+    }
+
+    .nav-line-btn {
+      background: var(--green-line);
+      color: var(--white) !important;
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 0.75rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.05em;
+      transition: opacity 0.2s !important;
+    }
+
+    .nav-line-btn:hover {
+      opacity: 0.85;
+      color: var(--white) !important;
+    }
+
+    /* ─── HERO ────────────────────────────────── */
+    #hero {
+      position: relative;
+      height: 100svh;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center 65%;
+      background-color: #1a2540;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(10,18,40,0.08) 0%,
+        rgba(10,18,40,0.18) 55%,
+        rgba(10,18,40,0.42) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: var(--white);
+      padding: 0 20px;
+      transform: translateY(-90px);
+    }
+
+    .hero-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      line-height: 1.05;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.3);
+    }
+
+    .hero-ja {
+      font-size: clamp(0.7rem, 1.6vw, 0.9rem);
+      font-weight: 300;
+      letter-spacing: 0.5em;
+      margin-top: 6px;
+      opacity: 0.85;
+    }
+
+    .hero-catch {
+      margin-top: 22px;
+      font-size: clamp(0.9rem, 2.2vw, 1.15rem);
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      opacity: 0.92;
+      text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+    }
+
+    .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 32px;
+      padding: 0;
+      background: none;
+      color: rgba(255,255,255,0.82);
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      padding-bottom: 3px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .hero-btn:hover {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.85);
+    }
+
+    .hero-btn svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      opacity: 0.75;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 36px;
+      background: rgba(255,255,255,0.4);
+      animation: scrolldown 1.6s ease-in-out infinite;
+    }
+
+    @keyframes scrolldown {
+      0%   { transform: scaleY(0); transform-origin: top; }
+      50%  { transform: scaleY(1); transform-origin: top; }
+      51%  { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ─── SECTIONS COMMON ─────────────────────── */
+    section {
+      padding: 80px 40px;
+    }
+
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      color: var(--navy);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    /* ─── ABOUT + PRICE ───────────────────────── */
+    #about-price {
+      background: var(--white);
+    }
+
+    .about-price-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* About */
+    .about-body {
+      margin-top: 28px;
+      font-size: 0.88rem;
+      color: var(--text-sub);
+      line-height: 2;
+    }
+
+    .about-meta {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .about-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--text-sub);
+    }
+
+    .about-meta-item span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--navy);
+      flex-shrink: 0;
+    }
+
+    /* Price */
+    .price-cards {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .price-card {
+      border: 1.5px solid var(--gray-mid);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .price-card.open {
+      border-color: var(--navy-light);
+    }
+
+    .price-card-btn {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .price-card-btn-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+    }
+
+    .price-card-tag {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      padding: 3px 10px;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+
+    .price-card-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .price-card-icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .price-card-icon::before,
+    .price-card-icon::after {
+      content: '';
+      position: absolute;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .price-card-icon::before {
+      width: 12px;
+      height: 1.5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .price-card-icon::after {
+      width: 1.5px;
+      height: 12px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .price-card.open .price-card-icon::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+      opacity: 0;
+    }
+
+    .price-card-body {
+      display: none;
+      padding: 0 24px 22px;
+      border-top: 1px solid var(--gray-mid);
+    }
+
+    .price-card.open .price-card-body {
+      display: block;
+    }
+
+    .price-card-desc {
+      font-size: 0.78rem;
+      color: var(--gray-text);
+      margin-top: 14px;
+      line-height: 1.8;
+    }
+
+    .price-card-amount {
+      margin-top: 12px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+    }
+
+    .price-card-amount span {
+      font-size: 0.9rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 400;
+      color: var(--gray-text);
+    }
+
+    .price-note {
+      margin-top: 16px;
+      font-size: 0.75rem;
+      color: var(--gray-text);
+      line-height: 1.7;
+    }
+
+    /* ─── FAQ ─────────────────────────────────── */
+    #faq {
+      background: var(--off-white);
+    }
+
+    .faq-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .faq-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--gray-mid);
+    }
+
+    .faq-header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .faq-toggle-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid var(--navy);
+      flex-shrink: 0;
+      position: relative;
+      transition: background 0.2s;
+    }
+
+    .faq-toggle-icon::before,
+    .faq-toggle-icon::after {
+      content: '';
+      position: absolute;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .faq-toggle-icon::before {
+      width: 14px;
+      height: 1.5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .faq-toggle-icon::after {
+      width: 1.5px;
+      height: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .faq-inner.open .faq-toggle-icon::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+      opacity: 0;
+    }
+
+    .faq-list-wrap {
+      display: none;
+      margin-top: 28px;
+    }
+
+    .faq-inner.open .faq-list-wrap {
+      display: block;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid var(--gray-mid);
+      overflow: hidden;
+    }
+
+    .faq-btn {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+    }
+
+    .faq-btn::before {
+      content: 'Q';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--navy);
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+
+    .faq-q {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--navy);
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .faq-icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      position: relative;
+      margin-left: 8px;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+      content: '';
+      position: absolute;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .faq-icon::before {
+      width: 12px;
+      height: 1.5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .faq-icon::after {
+      width: 1.5px;
+      height: 12px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .faq-item.open .faq-icon::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+      opacity: 0;
+    }
+
+    .faq-body {
+      display: none;
+      padding: 0 24px 20px 44px;
+    }
+
+    .faq-item.open .faq-body {
+      display: block;
+    }
+
+    .faq-a {
+      font-size: 0.79rem;
+      color: var(--text-sub);
+      line-height: 1.85;
+    }
+
+    .faq-contact-note {
+      margin-top: 28px;
+      font-size: 0.8rem;
+      color: var(--gray-text);
+      letter-spacing: 0.04em;
+    }
+
+    .faq-contact-link {
+      color: var(--navy);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: opacity 0.2s;
+    }
+
+    .faq-contact-link:hover {
+      opacity: 0.65;
+    }
+
+    /* Notes */
+    .notes-wrapper {
+      max-width: 1080px;
+      margin: 48px auto 0;
+      background: var(--white);
+      border: 1px solid var(--gray-mid);
+      border-radius: 10px;
+      padding: 28px 32px;
+    }
+
+    .notes-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: var(--navy);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .notes-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .notes-list li {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      line-height: 1.7;
+    }
+
+    .notes-list li::before {
+      content: '—';
+      color: var(--navy);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    /* ─── FOOTER ──────────────────────────────── */
+    #footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 64px 40px 40px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      margin-bottom: 6px;
+    }
+
+    .footer-tagline {
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      opacity: 0.6;
+      margin-bottom: 28px;
+    }
+
+    .footer-lead {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-bottom: 28px;
+      line-height: 1.9;
+    }
+
+    .footer-btns {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .btn-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 30px;
+      background: var(--green-line);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+      box-shadow: 0 4px 16px rgba(6,199,85,0.3);
+    }
+
+    .btn-line:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+    }
+
+    .btn-line svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 30px;
+      background: transparent;
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      border-radius: 100px;
+      text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.4);
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-instagram:hover {
+      border-color: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn-instagram svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer-divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,0.2);
+      margin: 0 auto 24px;
+    }
+
+    .footer-copy {
+      font-size: 0.7rem;
+      opacity: 0.4;
+      letter-spacing: 0.1em;
+    }
+
+    /* ─── RESPONSIVE ──────────────────────────── */
+    @media (max-width: 768px) {
+      header {
+        padding: 14px 20px;
+      }
+
+      nav a:not(.nav-line-btn) {
+        display: none;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      .about-price-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .notes-wrapper {
+        padding: 22px 20px;
+      }
+
+      #footer {
+        padding: 52px 20px 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-btn {
+        padding: 13px 28px;
+        font-size: 0.82rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── HEADER ─────────────────────────────── -->
+  <header>
+    <a href="#hero" class="header-logo">Ripple Moment</a>
+    <nav>
+      <a href="#about-price">About / Price</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://lin.ee/P54oKtJ" target="_blank" rel="noopener" class="nav-line-btn">
+        LINE お問い合わせ
+      </a>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-en">Ripple Moment</p>
+      <p class="hero-ja">リップルモーメント</p>
+      <p class="hero-catch">その一瞬が、ずっと宝物になる。</p>
+      <a href="https://lin.ee/P54oKtJ" target="_blank" rel="noopener" class="hero-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.627-.285-.627-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+        </svg>
+        LINEでお問い合わせ
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT + PRICE ────────────────────────── -->
+  <section id="about-price">
+    <div class="about-price-inner">
+
+      <!-- About -->
+      <div class="about-col">
+        <p class="section-label">About</p>
+        <p class="about-body">
+          もともとカメラが好きで、風景や日常をよく撮っていました。子どもが野球を始めたことをきっかけに、スポーツ写真にはまり約10年。少年野球から中学・高校・大学まで、幅広く撮影しております。躍動する瞬間、選手の表情、チームの空気感——その場で生まれるすべての瞬間を大切にしています。大阪を中心に、週末限定で活動中。楽しみながら、丁寧に撮ることを心がけています。<br><br>― Miwa
+        </p>
+        <div class="about-meta">
+          <div class="about-meta-item">
+            <span class="dot"></span>
+            対応エリア：大阪府内メイン（その他要相談）
+          </div>
+          <div class="about-meta-item">
+            <span class="dot"></span>
+            活動：週末限定
+          </div>
+          <div class="about-meta-item">
+            <span class="dot"></span>
+            撮影ジャンル：スポーツ・野球
+          </div>
+        </div>
+      </div>
+
+      <!-- Price -->
+      <div class="price-col">
+        <p class="section-label">Price</p>
+        <h2 class="section-title">料金プラン</h2>
+        <div class="price-cards">
+
+          <div class="price-card">
+            <button class="price-card-btn" onclick="togglePrice(this)">
+              <div class="price-card-btn-left">
+                <span class="price-card-tag">TEAM</span>
+                <span class="price-card-name">チーム撮影</span>
+              </div>
+              <span class="price-card-icon"></span>
+            </button>
+            <div class="price-card-body">
+              <p class="price-card-desc">
+                試合・練習問わず<br>
+                半日（〜4時間）／データ150枚程度<br>
+                ギガファイル便納品
+              </p>
+              <p class="price-card-amount">¥20,000<span>〜（税込）</span></p>
+            </div>
+          </div>
+
+          <div class="price-card">
+            <button class="price-card-btn" onclick="togglePrice(this)">
+              <div class="price-card-btn-left">
+                <span class="price-card-tag">PERSONAL</span>
+                <span class="price-card-name">個人撮影</span>
+              </div>
+              <span class="price-card-icon"></span>
+            </button>
+            <div class="price-card-body">
+              <p class="price-card-desc">
+                個人〜5名<br>
+                データ30〜50枚<br>
+                ギガファイル便納品
+              </p>
+              <p class="price-card-amount">¥10,000<span>〜（税込）</span></p>
+            </div>
+          </div>
+
+        </div>
+        <p class="price-note">お支払いは撮影当日に現金またはPayPayにてお願いしております。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FAQ ──────────────────────────────────── -->
+  <section id="faq">
+    <div class="faq-inner">
+
+      <div class="faq-header">
+        <div class="faq-header-left">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+      </div>
+
+      <div class="faq-list-wrap" style="display:block;margin-top:28px;">
+      <div class="faq-grid">
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">納品方法は？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">ギガファイル便にてデータをお送りします。ダウンロード期限は30日間です。期限切れの場合は再送しますのでお気軽にご連絡ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">選手全員を均等に撮影してもらえますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">試合の流れに沿って撮影するため、出場機会や守備位置、撮影可能場所からの距離などによって撮影枚数に差が生じる場合があります。全選手を均等に撮影することはお約束できかねますので、あらかじめご了承ください。特定の選手を中心に撮影希望の場合はお申し付けください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">納品までどのくらいかかりますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">撮影後1〜2週間を目安にお送りします。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">雨天の場合はどうなりますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">雨天など事前に中止が決まった場合はキャンセル料は発生しません。現地到着後のキャンセルは、交通費を一部ご負担いただく場合がございます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">対応エリア外でも依頼できますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">大阪府内がメインエリアです。大阪府外の近郊エリアはお気軽にご相談ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">野球以外のスポーツの撮影はできますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">対応可能なスポーツもございます。お気軽にお問い合わせください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">返信にどのくらいかかりますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">メッセージを確認次第返信いたします。返信までお時間をいただく場合がございますのでご了承ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span class="faq-q">撮影した写真はSNSに掲載されますか？</span>
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-body">
+            <p class="faq-a">ご依頼いただいた撮影写真をポートフォリオ等に使用させていただく場合があります。使用の際は必ず事前にご確認・ご許可をいただきますので、撮影依頼いただいた写真を勝手にポートフォリオ等に使用することはございません。</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="faq-contact-note">その他のご質問は、お気軽に<a href="https://lin.ee/P54oKtJ" target="_blank" rel="noopener" class="faq-contact-link">LINE</a>にてお問い合わせください。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────── -->
+  <footer id="footer">
+    <p class="footer-logo">Ripple Moment</p>
+    <p class="footer-tagline">リップルモーメント</p>
+    <p class="footer-lead">
+      お気軽にLINEまたはInstagramのDMからご連絡ください。
+    </p>
+    <div class="footer-btns">
+      <a href="https://lin.ee/P54oKtJ" target="_blank" rel="noopener" class="btn-line">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.627-.285-.627-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+        </svg>
+        LINEでお問い合わせ
+      </a>
+      <a href="https://www.instagram.com/base_ball_920/" target="_blank" rel="noopener" class="btn-instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        Instagram
+      </a>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2026 Ripple Moment</p>
+  </footer>
+
+  <script>
+    function toggleFaqSection(header) {
+      header.closest('.faq-inner').classList.toggle('open');
+    }
+    function toggleFaq(btn) {
+      btn.closest('.faq-item').classList.toggle('open');
+    }
+    function togglePrice(btn) {
+      btn.closest('.price-card').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
